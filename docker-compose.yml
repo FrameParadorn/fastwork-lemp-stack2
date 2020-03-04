@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+    lamp:
+        image: paraday2/lemp:v1
+        container_name: lemp_v1 
+        ports: 
+            - "80:80"
+            - "81:81"
+        volumes:
+            - ./../:/var/www/html/src
+        restart: always
